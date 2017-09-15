@@ -1,5 +1,7 @@
 # GPG agent pinentry error fixer
 
+<img src="README.png" alt="GnuPG" width="356" height="120"/>
+
 Keywords: gpg, agent, pinentry, su, ssh, tty, curses
 
 Treats: 
