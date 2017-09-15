@@ -10,10 +10,12 @@ Treats:
  * "gpg: problem with the agent: No pinentry"
  * "gpg: decryption failed: No secret key"
 
-Try running the script in this repository.
+Try running the script in this repository:
+
+  * [gpg-agent-pinentry-error-fixer](gpg-agent-pinentry-error-fixer)
 
 
-## Fixer ideas
+## What else to try
 
 Set environment variables such as: 
 
