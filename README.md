@@ -2,7 +2,7 @@
 
 <img src="README.png" alt="GnuPG" width="450" height="153"/>
 
-Keywords: gpg, agent, pinentry, su, ssh, tty, curses
+Keywords: gpg, agent, gpg-agent, gnupg, pinentry, su, ssh, tty, curses
 
 Treats: 
 
