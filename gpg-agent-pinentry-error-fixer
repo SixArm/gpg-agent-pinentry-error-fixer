@@ -42,5 +42,13 @@ out "Ok: pinentry is executable: $prog" ||
 die "Err: pinentry program is not executable: $prog"
 
 out "Try gpg now."
+out ""
 out "If gpg still doesn't work because of pinentry, then try running:"
-out "killall gpg-agent; gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry"
+out ""
+out "    gpg-connect-agent reloadagent /bye"
+out ""
+out "If gpg still doesn't work, then try:
+out ""
+out "    killall gpg-agent; gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry"
+
+

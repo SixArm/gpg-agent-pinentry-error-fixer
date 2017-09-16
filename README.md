@@ -27,15 +27,59 @@ Set environment variables such as:
     export GPG_TTY
     echo $GPG_TTY
     
-Do we have a viable pinentry that uses curses?
+Do we have a viable pinentry that uses curses or tty?
 
     which pinentry-curses
+    which pinentry-tty
 
-Set the GPG agent to use TTY by editing `~/.gnupg/gpg-agent.conf` and using a line such as one of these:
+
+## Install pinentry
+
+For macOS and brew:
+
+    brew install pinentry
+
+For Debian and Ubuntu:
+
+    apt-get install pinentry
+    apt-get install pinentry-curses
+
+The pinentry program has many versions:
+
+    pinentry
+    pinentry-curses
+    pinentry-emacs
+    pinentry-gnome3
+    pinentry-gtk2
+    pinentry-qt
+    pinentry-tty
+
+
+## Set pinetry
+
+Set the GPG agent to use the pinentry program.
+
+Edit `~/.gnupg/gpg-agent.conf`.
+
+Add a line such as:
  
     pinentry-program /usr/local/bin/pinentry-curses
 
-    pinentry-program /usr/bin/pinentry-tty
+Try now.
+
+
+## Reload
+
+Reload the agent:
+
+    gpg-connect-agent reloadagent /bye
+
+Try now.
+
+
+## Restart
+
+If GPG still isn't working, and has the same error message, then try kill and restart.
 
 Kill any gpg-agent:
 
@@ -46,4 +90,6 @@ Start gpg-agent such as one of these:
     gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry
     
     gpg-agent --daemon --keep-tty --use-standard-socket --pinentry-program=/usr/bin/pinentry-curses
+
+Try now.
 
