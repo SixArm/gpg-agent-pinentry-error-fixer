@@ -89,7 +89,7 @@ Start gpg-agent such as one of these:
 
     gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry
     
-    gpg-agent --daemon --keep-tty --use-standard-socket --pinentry-program=/usr/bin/pinentry-curses
+    gpg-agent --daemon --keep-tty --pinentry-program=/usr/bin/pinentry-curses
 
 Try now.
 
