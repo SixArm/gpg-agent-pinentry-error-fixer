@@ -59,7 +59,7 @@ The pinentry program has many versions:
 
 Set the GPG agent to use the pinentry program.
 
-Edit `~/.gnupg/gpg-agent.conf`.
+Edit `~/.gnupg/gpg-agent.conf`
 
 Add a line such as:
  
