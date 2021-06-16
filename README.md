@@ -59,7 +59,7 @@ The pinentry program has many versions:
 
 Set the GPG agent to use the pinentry program.
 
-Edit `~/.gnupg/gpg-agent.conf`.
+Edit `~/.gnupg/gpg-agent.conf`
 
 Add a line such as:
  
@@ -89,7 +89,7 @@ Start gpg-agent such as one of these:
 
     gpg-agent --daemon --pinentry-program /usr/local/bin/pinentry
     
-    gpg-agent --daemon --keep-tty --use-standard-socket --pinentry-program=/usr/bin/pinentry-curses
+    gpg-agent --daemon --keep-tty --pinentry-program=/usr/bin/pinentry-curses
 
 Try now.
 
